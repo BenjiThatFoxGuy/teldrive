@@ -27,17 +27,17 @@ import (
 )
 
 const (
-	AppId   = 2040
-	AppHash = "b18441a1ff607e10a989891a5462e627"
+	AppId   = 2496
+	AppHash = "8da85b0d5bfe62527e5b244c209159c3"
 )
 
 var Device = telegram.DeviceConfig{
-	DeviceModel:    "Desktop",
+	DeviceModel:    "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36",
 	SystemVersion:  "Windows 11",
-	AppVersion:     "5.10.3 x64",
+	AppVersion:     "2.1.0 K",
 	LangCode:       "en",
 	SystemLangCode: "en-US",
-	LangPack:       "tdesktop",
+	LangPack:       "web",
 }
 
 func newClient(ctx context.Context, config *config.TGConfig, handler telegram.UpdateHandler, storage session.Storage, middlewares ...telegram.Middleware) (*telegram.Client, error) {
